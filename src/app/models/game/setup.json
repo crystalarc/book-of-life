@@ -1,0 +1,69 @@
+{
+  "scenes": [{
+    "name": "Babylon",
+    "id": "G1",
+    "graphic": "",
+    "options": [{
+      "text": "go to tower",
+      "action": "G8",
+      "icon": "",
+      "effect": "die"
+    }]
+  }, {
+    "name": "Start",
+    "id": "A1",
+    "text": "You've been born. Pick a way of life.",
+    "graphic": "",
+    "select": [{
+      "name": "torture",
+      "id": 0
+    }, {
+      "name": "pleasure",
+      "id": 1
+    }, {
+      "name": "nihilism",
+      "id": 2
+    }],
+    "options": [
+      {
+        "text": "continue to select race",
+        "action": "B1",
+        "effect": "saveRace"
+      }
+    ]
+  }, {
+    "name": "Race",
+    "id": "B1",
+    "text": "Pick a race.",
+    "graphic": "",
+    "select": [
+      {
+        "name": "European",
+        "id": 0
+      },
+      {
+        "name": "African",
+        "id": 1
+      },
+      {
+        "name": "Caribean",
+        "id": 2
+      },
+      {
+        "name": "Indigenous",
+        "id": 3
+      },
+      {
+        "name": "Asian",
+        "id": 3
+      }
+    ],
+    "options": [
+      {
+        "text": "continue to select race",
+        "action": "B1",
+        "effect": "saveRace"
+      }
+    ]
+  }]
+}
